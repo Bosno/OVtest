@@ -8,9 +8,10 @@
             <li v-if="isLoggedIn"><router-link to="/">Dashboard</router-link></li>
             <li v-if="isLoggedIn"><router-link to="/customers">Customers</router-link></li>
             <li v-if="isLoggedIn"><router-link to="/projects">Projects</router-link></li>
+            <li v-if="isLoggedIn"><router-link to="/">Pricing</router-link></li>
             <li v-if="!isLoggedIn"><router-link to="/login">Login</router-link></li>
             <li v-if="!isLoggedIn"><router-link to="/register">Register</router-link></li>
-             <li v-if="isLoggedIn"><button v-on:click="logout" class="btn black">Logout</button></li>
+            <li v-if="isLoggedIn"><button v-on:click="logout" class="btn black">Logout</button></li>
           </ul>
 
         <ul class="side-nav hide-on-large-only" id="mobile-demo">
